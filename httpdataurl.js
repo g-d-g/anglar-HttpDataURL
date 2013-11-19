@@ -8,7 +8,7 @@ app.factory('HttpDataURL', function($q) {
 			binary += String.fromCharCode( bytes[ i ] )
 		}
 		
-		return "data:"+responseHeader("content-type")+";base64,"+window.btoa( binary );
+		return "data:" + responseHeader( "content-type" ) + ";base64," + window.btoa( binary );
 	}
 
 	return {
